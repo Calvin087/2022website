@@ -1,0 +1,15 @@
+.post_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.7em;
+  color: #a990ff;
+}
+
+.post_ex {
+  font-size: 0.8rem;
+  line-height: 1.7em;
+}
+
+.post_container {
+  margin-bottom: 25px;
+}
