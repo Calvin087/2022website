@@ -19,6 +19,7 @@ const renderPosts = (post) => {
 const LatestPosts = ({ posts }) => {
   return (
     <div>
+      <h2 className={styles.post_header}>Latest Posts</h2>
       {posts &&
         posts.map((post, i) => {
           return <div key={i}>{renderPosts(post)}</div>;

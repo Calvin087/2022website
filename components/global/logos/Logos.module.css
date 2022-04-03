@@ -1,0 +1,48 @@
+.logo_invert {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.logo_container {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.img {
+  width: auto;
+  height: 50px;
+}
+
+.post_header {
+  color: #e1deff;
+}
+
+.main_container {
+  margin: 50px 0px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .main_container {
+    margin: 50px 0px 50px 0px;
+  }
+}
+
+@media (min-width: 100em) {
+  .main_container {
+    margin: 150px 0px 50px 0px;
+  }
+}
+
+.hero_sub {
+  text-align: center;
+  line-height: 1.7em;
+  width: 35ch;
+}
