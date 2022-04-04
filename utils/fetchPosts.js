@@ -2,7 +2,7 @@
 const Airtable = require("airtable");
 
 //
-// fetch posts from wordpress
+// fetch a few posts from wordpress
 
 module.exports.fetchPostsSmall = async () => {
   const posts = await fetch(
@@ -21,6 +21,17 @@ module.exports.fetchPostsLarge = async () => {
   ).then((response) => response.json());
 
   return posts;
+};
+
+//
+// fetch single post
+
+module.exports.fetchPostsSingle = async (params) => {
+  const post = await fetch(
+    `https://calvint1.sg-host.com/wp-json/wp/v2/react_blog?slug=${params.slug}`
+  ).then((response) => response.json());
+
+  return post;
 };
 
 //
@@ -53,24 +64,3 @@ module.exports.fetchVideos = async () => {
     };
   });
 };
-
-// const fetchAllPosts = async () => {
-
-//   let allData = records.map((record) => {
-//     return {
-//       title: record.get("JobTitle") || "",
-//       companyName: record.get("Company") || "",
-//       published: record.get("DatePublished") || "",
-//       posted: record.get("DatePublished") || "",
-//       location: record.get("Location") || "",
-//       salary: record.get("Salary") || "€",
-//       url: record.get("Link") || "",
-//       description: record.get("Description") || "",
-//       image: stripURL(record.get("Link")) || "",
-//       email: record.get("Email") || "",
-//       record: record.get("record") || "",
-//     };
-//   });
-
-//   return allData;
-// };

@@ -1,0 +1,25 @@
+.post_title {
+  font-weight: bold;
+  line-height: 1.7em;
+  color: #7f9bee;
+}
+
+.post_ex {
+  font-size: 0.8rem;
+  line-height: 1.7em;
+  color: #e1deff;
+}
+
+.post_container {
+  margin-bottom: 25px;
+}
+
+.post_header {
+  color: #e1deff;
+}
+
+.main_container {
+  padding-top: 50px;
+  margin: 0 auto;
+  width: 45ch;
+}

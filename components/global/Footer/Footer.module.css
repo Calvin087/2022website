@@ -1,0 +1,25 @@
+.footer {
+  background-image: url("/images/footer.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  height: 150px;
+}
+
+@media (min-width: 40em) {
+  .footer {
+    height: 449px;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.socials > a > img {
+  margin: 0px 20px 0px 20px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
