@@ -4,6 +4,7 @@ import Link from "next/link";
 import Footer from "../components/global/Footer/Footer";
 import Header from "../components/global/Header/Header";
 import LatestPosts from "../components/global/LatestPosts/LatestPosts";
+import LatestProjects from "../components/global/LatestProjects/LatestProjects";
 import LatestVideos from "../components/global/LatestVideos/LatestVideos";
 import Logos from "../components/global/logos/Logos";
 import { fetchPostsSmall, fetchVideos } from "../utils/fetchPosts";
@@ -70,8 +71,11 @@ export default function Home({ posts, videos }) {
           </a>
         </div>
         <div className={styles.gradient_bg_right}></div>
-        <Footer />
       </section>
+      <section>
+        <LatestProjects />
+      </section>
+      <Footer />
     </div>
   );
 }

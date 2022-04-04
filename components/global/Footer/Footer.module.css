@@ -19,6 +19,7 @@
   margin: 0 auto;
 }
 .socials > a > img {
+  max-width: 40px;
   margin: 0px 20px 0px 20px;
   -webkit-filter: invert(1);
   filter: invert(1);
