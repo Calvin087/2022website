@@ -10,10 +10,6 @@
   color: #e1deff;
 }
 
-.post_container {
-  margin-bottom: 25px;
-}
-
 .post_header {
   color: #e1deff;
 }
@@ -22,4 +18,12 @@
   padding-top: 50px;
   margin: 0 auto;
   width: 45ch;
+}
+
+.post_container {
+  z-index: 10;
+  padding: 10px 40px 0px 40px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 50ch;
 }

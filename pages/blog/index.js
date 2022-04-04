@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "../../components/global/Header/Header";
 import styles from "./index.module.css";
 import { fetchPostsLarge } from "../../utils/fetchPosts";
+import Head from "next/head";
 
 const renderBlogList = (post) => {
   const ex = post.acf.excerpt.split(" ").slice(0, 15).join(" ");
@@ -20,19 +21,33 @@ const renderBlogList = (post) => {
 
 const BlogList = ({ posts }) => {
   return (
-    <div>
-      <Link href="/">
-        <a>
-          <Header />
-        </a>
-      </Link>
-      <div className={styles.main_container}>
-        {posts &&
-          posts.map((post, i) => {
-            return <div key={i}>{renderBlogList(post)}</div>;
-          })}
+    <>
+      <Head>
+        {/* default deets */}
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content={`Increasing revenue and reducing costs are my primary goals. Once we've solved those problems, we can then focus on beauty.`}
+        />
+        <meta charSet="utf-8" />
+
+        {/* regular title */}
+        <title>Calvin Torra - Frontend Developer - Web3</title>
+      </Head>
+      <div>
+        <Link href="/">
+          <a>
+            <Header />
+          </a>
+        </Link>
+        <div className={styles.main_container}>
+          {posts &&
+            posts.map((post, i) => {
+              return <div key={i}>{renderBlogList(post)}</div>;
+            })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
