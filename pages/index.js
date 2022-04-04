@@ -26,8 +26,8 @@ export default function Home({ posts, videos }) {
             {"&"} Web3 Development
           </div>
           <div className={styles.hero_sub}>
-            Increasing revenue and reducing costs are my primary goals. Once
-            we've solved those problems, we can then focus on beauty.
+            {`Increasing revenue and reducing costs are my primary goals. Once
+            we've solved those problems, we can then focus on beauty.`}
           </div>
         </div>
         <Logos />
