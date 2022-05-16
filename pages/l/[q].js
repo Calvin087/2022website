@@ -16,7 +16,7 @@ const Redirecter = () => {
 
   useEffect(() => {
     if (q !== undefined) {
-      router.push(options[q]);
+      router.push(options[q] || "/");
     }
   }, [q]);
 
