@@ -1,11 +1,11 @@
-a {
-  color: #ffc107;
-}
-
 .main_container {
   position: relative;
   overflow: hidden;
   z-index: 0;
+}
+
+.post_container a {
+  color: #ffc107;
 }
 
 .post_container {
