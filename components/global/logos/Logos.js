@@ -12,7 +12,7 @@ const renderImages = (image) => {
 const image = [
   {
     name: "Node",
-    invert: false,
+    invert: true,
   },
   {
     name: "JS",
@@ -27,7 +27,11 @@ const image = [
     invert: true,
   },
   {
-    name: "web3js",
+    name: "Ethers",
+    invert: false,
+  },
+  {
+    name: "Hardhat",
     invert: false,
   },
 ];
