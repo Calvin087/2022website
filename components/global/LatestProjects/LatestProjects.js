@@ -1,12 +1,18 @@
+import Image from "next/image";
 import styles from "./LatestProjects.module.css";
 
 const renderProjects = ({ title, image, description, link }) => {
   return (
     <div className={styles.card}>
-      <div
+      <Image src={`${image}`} layout="responsive"
+        width={250}
+        height={150}
+        className={styles.featured_image}
+        />
+      {/* <div
         className={styles.featured_image}
         style={{ backgroundImage: `url(${image})` }}
-      ></div>
+      ></div> */}
       <div className={styles.title}>{title}</div>
       <div className={styles.description}>{description}</div>
       <a target="_blank" rel="noreferrer" href={link}>
