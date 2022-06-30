@@ -1,9 +1,11 @@
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-
 const Redirecter = () => {
-  const router = useRouter();
-  const { q } = router.query;
+  return <></>;
+};
+
+export default Redirecter;
+
+export async function getServerSideProps(context) {
+  const { q } = context.params;
 
   const options = {
     youtube:
@@ -14,25 +16,10 @@ const Redirecter = () => {
     twitter: "https://twitter.com/Gr8087",
   };
 
-  useEffect(() => {
-    if (q !== undefined) {
-      router.push(options[q] || "/");
-    }
-  }, [q]);
-
-  return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      1 second boss
-    </div>
-  );
-};
-
-export default Redirecter;
+  return {
+    redirect: {
+      destination: `${options[q]}`,
+      permanent: false,
+    },
+  };
+}
