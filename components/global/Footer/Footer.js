@@ -4,7 +4,11 @@ const Footer = () => {
   return (
     <div>
       <div className={styles.socials}>
-        <a href="https://twitter.com/Gr8087" target="_blank" rel="noreferrer">
+        <a
+          href="https://twitter.com/calvintorra"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src="/images/social/twitter.png" />
         </a>
         <a
