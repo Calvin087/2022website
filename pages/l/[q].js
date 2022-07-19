@@ -17,6 +17,7 @@ export async function getServerSideProps(context) {
     google:
       "https://www.google.com/search?q=%22Calvin+Torra%22&ei=xO3OYvL9OeiZlwSa17O4Cw&ved=0ahUKEwjy78ncn_b4AhXozIUKHZrrDLcQ4dUDCA4&uact=5&oq=%22Calvin+Torra%22&gs_lcp=Cgdnd3Mtd2l6EAM6CAgAEIAEELADOgcIABAeELADOgkIABAeELADEAU6BggAEB4QFkoECEEYAUoECEYYAFC7BFjHCWDYC2gBcAB4AIABaogByAGSAQMxLjGYAQCgAQHIAQPAAQE&sclient=gws-wiz",
     scrape: "https://offers.torramedia.com/scrape-the-world",
+    newsletter: "https://offers.torramedia.com/newsletter",
   };
 
   return {
